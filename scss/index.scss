@@ -1,0 +1,113 @@
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://example.com/MaterialIcons-Regular.eot); /* For IE6-8 */
+  src: local('Material Icons'),
+    local('MaterialIcons-Regular'),
+    url(https://example.com/MaterialIcons-Regular.woff2) format('woff2'),
+    url(https://example.com/MaterialIcons-Regular.woff) format('woff'),
+    url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');
+}
+
+.sidebarMenu {
+  width: 296px;
+  padding: 32px;
+  background-color: #EDF4EE;
+  .nav {
+    margin-top: 32px;
+  }
+  .nav-link{
+    padding: 0;
+    margin-bottom: 26px;
+    & > * {
+      vertical-align: bottom;  
+    }
+    .material-icons {
+      margin-right: 16px;
+    }
+  }
+  a {
+    color: #000;
+    font-weight: bold;
+  }
+}
+
+.sidebar-sticky {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.userInfo {
+  display: flex;
+  margin-top: auto;
+  align-items: center;
+  img {
+    border-radius: 50%;
+    width: 40px;
+  }
+  .content {
+    margin-left: 16px;
+    line-height: 1;
+    h4 {
+      font-size: 16px;
+    }
+    p {
+      margin-top: 4px;
+      font-size: 14px;
+      color: #0000009A;
+    }
+  }
+}
+
+main {
+  padding-top: 32px;
+}
+
+.infoBar {
+  margin-bottom: 48px;
+}
+
+.btn-plus {
+  margin-left: 47px;
+  font-weight: bold;
+  font-size: 16px;
+  span {
+    color: #2A8356; 
+    margin-right: 8px;
+    font-size: 24px;
+  }
+}
+
+.table td, .table th {
+  vertical-align: middle;
+}
+
+.table {
+  margin-bottom: 70px;
+  thead {
+    th {
+      border-top: none;  
+    }
+  }
+  td:last-child {
+    text-align: right;
+  }
+  tr:last-child {
+    border-bottom: 1px solid #dee2e6;
+  }
+}
+
+.page-item.active .page-link {
+  background-color: #2A8356;
+  border-color: #2A8356;
+}
+
+.page-link {
+  color: #2A8356;
+}
+
+.pagination {
+  margin-bottom: 32px;
+}
