@@ -10,7 +10,25 @@
     url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');
 }
 
-.sidebarMenu {
+h1 {
+  a {
+    display: block;
+    width: 150px;
+    height: 40px;
+    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week5/logo-ANSWER.svg);
+    text-indent: 101%;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+}
+
+.material-icons {
+  &:hover {
+    color: #2A8356;
+  }
+}
+
+.sidebar {
   width: 296px;
   padding: 32px;
   background-color: #EDF4EE;
@@ -20,6 +38,9 @@
   .nav-link{
     padding: 0;
     margin-bottom: 26px;
+    &.active {
+      color: #2A8356;
+    }
     & > * {
       vertical-align: bottom;  
     }
@@ -50,10 +71,10 @@
   .content {
     margin-left: 16px;
     line-height: 1;
-    h4 {
+    .title {
       font-size: 16px;
     }
-    p {
+    .mail {
       margin-top: 4px;
       font-size: 14px;
       color: #0000009A;
@@ -61,34 +82,38 @@
   }
 }
 
-main {
-  padding-top: 32px;
-}
-
-.infoBar {
-  margin-bottom: 48px;
-}
-
-.btn-plus {
-  margin-left: 47px;
-  font-weight: bold;
-  font-size: 16px;
-  span {
-    color: #2A8356; 
-    margin-right: 8px;
-    font-size: 24px;
+.main {
+  padding: 32px 32px 0;
+  width: calc(100% - 296px);
+  .infoBar {
+    margin-bottom: 36px;
   }
-}
-
-.table td, .table th {
-  vertical-align: middle;
+  .btn-plus {
+    margin-left: 47px;
+    font-weight: bold;
+    font-size: 16px;
+    span {
+      color: #2A8356; 
+      margin-right: 8px;
+      font-size: 24px;
+    }
+  }
 }
 
 .table {
   margin-bottom: 70px;
+  td, th {
+    vertical-align: middle;
+  }
   thead {
     th {
       border-top: none;  
+      border-color: #121212;
+    }
+    .material-icons {
+      vertical-align: middle;
+      font-size: 16px;
+      color: #2A8356;
     }
   }
   td:last-child {
@@ -99,6 +124,14 @@ main {
   }
 }
 
+.table-hover tbody tr:hover {
+  background-color: rgba(42, 131, 86, .05);
+}
+
+.pagination {
+  margin-bottom: 32px;
+}
+
 .page-item.active .page-link {
   background-color: #2A8356;
   border-color: #2A8356;
@@ -106,8 +139,4 @@ main {
 
 .page-link {
   color: #2A8356;
-}
-
-.pagination {
-  margin-bottom: 32px;
 }
